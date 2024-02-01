@@ -1,0 +1,9 @@
+@import '_variables.css';
+
+h1 {
+    color: var(--colorHeader);
+}
+
+footer {
+    color: var(--colorFooter);
+}
