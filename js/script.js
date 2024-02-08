@@ -72,7 +72,18 @@ for (const product of products) {
     productArticle.appendChild(productHeader);
     productArticle.appendChild(productDescription);
 
+    productArticle.addEventListener('click', function() {
+        document.querySelector('#productModal h2').innerHTML = product.title;
+        document.querySelector('#description').innerHTML = product.description;
+        document.querySelector('#price').innerHTML = product.price;
+        document.querySelector('#category').innerHTML = product.category;
+        document.querySelector('#rate').innerHTML = product.rating.rate;
+        document.querySelector('#rateCount').innerHTML = product.rating.count;
+
+        document.querySelector('#productModal').showModal();
+    });
+
     productsInfo.appendChild(productArticle);
 }
-
 document.querySelector('main').appendChild(productsInfo);
+
