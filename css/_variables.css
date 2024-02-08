@@ -1,4 +1,7 @@
 :root {
-    --colorHeader: red;
-    --colorFooter: red;
+    --colorSecondary: floralwhite;
+    --colorBgSecondary: steelblue;
+
+    --fontDefault: Verdana, Arial, sans-serif;
+    --fontHighlight: 'Book Antiqua', serif;
 }

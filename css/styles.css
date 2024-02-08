@@ -1,9 +1,44 @@
 @import '_variables.css';
 
-h1 {
-    color: var(--colorHeader);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fontDefault);
+}
+
+header, footer {
+    font-family: var(--fontHighlight);
+    color: var(--colorSecondary);
+    background-color: var(--colorBgSecondary);
+}
+
+header {
+    padding: 0.5rem 2rem;
 }
 
 footer {
-    color: var(--colorFooter);
+    padding: 0.1rem;
+    text-align: center;
+}
+
+nav {
+    padding: 0.25rem 2rem;
+    border-bottom: solid 0.2rem var(--colorBgSecondary);
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+nav li > a {
+    text-decoration: none;
+    color: var(--colorBgSecondary);
+}
+
+section, article {
+    margin: 1rem;
 }
