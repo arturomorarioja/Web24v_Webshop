@@ -26,26 +26,29 @@
                 2200 København Ø
             </div>
         </address>
-        <form action="">
+        <form id="frmContact">
             <fieldset>
                 <legend>Your enquiry</legend>
                 <div>
                     <label for="txtName">Name</label>
-                    <input type="text" id="txtName">
+                    <input type="text" id="txtName" name="formName" required>
                 </div>
                 <div>
                     <label for="txtEmail">E-mail address</label>
-                    <input type="text" id="txtEmail">
+                    <input type="email" id="txtEmail" name="formEmail" required>
                 </div>
                 <div>
                     <label for="txtPhone">Phone no.</label>
-                    <input type="text" id="txtPhone">
+                    <input type="tel" id="txtPhone" name="formPhone" pattern="[0-9]{8}" required>
                 </div>
                 <div>
                     <div>
                         <label for="txtComments">Comments</label>
                     </div>
-                    <textarea name="" id="txtComments"></textarea>
+                    <textarea name="" id="txtComments" name="formComments" required></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Send">
                 </div>
             </fieldset>
         </form>
