@@ -1,0 +1,15 @@
+@import 'styles.css';
+
+form, address {
+    margin: 1rem;
+}
+
+fieldset {
+    padding: 1rem 0;
+    border: none;
+    border-top: thin solid var(--colorBgSecondary);
+}
+legend {
+    margin-left: 1rem;
+    padding: 0 0.5rem;
+}

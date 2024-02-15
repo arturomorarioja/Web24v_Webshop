@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/contactus.css">
 </head>
 <body>
     <header>
@@ -18,7 +18,37 @@
         </ul>
     </nav>
     <main>
-        <p>Contact us page</p>
+        <address>
+            <div>
+                Guldbergsgade 29N
+            </div>
+            <div>
+                2200 København Ø
+            </div>
+        </address>
+        <form action="">
+            <fieldset>
+                <legend>Your enquiry</legend>
+                <div>
+                    <label for="txtName">Name</label>
+                    <input type="text" id="txtName">
+                </div>
+                <div>
+                    <label for="txtEmail">E-mail address</label>
+                    <input type="text" id="txtEmail">
+                </div>
+                <div>
+                    <label for="txtPhone">Phone no.</label>
+                    <input type="text" id="txtPhone">
+                </div>
+                <div>
+                    <div>
+                        <label for="txtComments">Comments</label>
+                    </div>
+                    <textarea name="" id="txtComments"></textarea>
+                </div>
+            </fieldset>
+        </form>
     </main>
     <footer>
         <p>&copy; 2024 KEA Web Development</p>

@@ -42,14 +42,3 @@ nav li > a {
 section, article {
     margin: 1rem;
 }
-
-#price {
-    display: inline-block;
-    padding: 0.25rem 1rem;
-    color: var(--colorSecondary);
-    background-color: var(--colorPrice);
-    border-radius: 0.5rem;
-}
-#price:after {
-    content: ' DKK';
-}
