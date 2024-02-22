@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="css/contactus.css">
+    <script src="js/contactus.js" defer></script>
 </head>
 <body>
     <header>
@@ -39,8 +40,10 @@
                 </div>
                 <div>
                     <label for="txtPhone">Phone no.</label>
-                    <input type="tel" id="txtPhone" name="formPhone" pattern="[0-9]{8}" required>
-                </div>
+                    <input type="tel" id="txtPhone" name="formPhone" required>
+                    <!-- <input type="tel" id="txtPhone" name="formPhone" pattern="[0-9]{8}" required> -->
+                    <span data-input="txtPhone" class="errorMessage hidden">Incorrect phone information</span>
+                </div>  
                 <div>
                     <div>
                         <label for="txtComments">Comments</label>

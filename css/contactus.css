@@ -30,3 +30,10 @@ input[type=submit] {
 textarea {
     width: 80%;
 }
+
+.hidden {
+    display: none;
+}
+.errorMessage {
+    color: var(--colorErrorMessage);
+}
