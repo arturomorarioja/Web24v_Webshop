@@ -20,17 +20,20 @@
     </nav>
     <main>
         <section>
-            <p>Welcome to KEA Webshop!</p>
+            <p id="msgWelcome">Welcome to KEA Webshop!</p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 KEA Web Development</p>
+        <p>&copy; 2024 <a href="https://www.kea.dk" target="_blank" 
+            title="KEA (Copenhagen School of Design and Technology)">KEA Web Development</a></p>
     </footer>
     <dialog id="productModal">
+        <button id="close">&times;</button>
         <header>
             <h2></h2>
         </header>
         <section>
+            <img id="picture" src="" alt="">
             <p id="description"></p>
             <p id="price"></p>
             <p id="category"></p>

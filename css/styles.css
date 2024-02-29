@@ -27,6 +27,9 @@ footer {
 nav {
     padding: 0.25rem 2rem;
     border-bottom: solid 0.2rem var(--colorBgSecondary);
+    position: sticky;
+    top: 0;
+    background-color: var(--colorSecondary);
 }
 
 nav li {
@@ -35,10 +38,20 @@ nav li {
 }
 
 nav li > a {
-    text-decoration: none;
     color: var(--colorBgSecondary);
+}
+nav li > a:hover {
+    text-decoration: underline overline;
 }
 
 section, article {
     margin: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--colorSecondary);
+}
+a:hover {
+    text-decoration: underline;
 }

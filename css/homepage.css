@@ -1,7 +1,39 @@
 @import 'styles.css';
 
+#productList > article {
+    cursor: pointer;
+}
+
+dialog {
+    top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+    outline: none;
+}
+#productModal {
+    border: none !important;
+}
+#productModal > #close {
+    float: right;
+    margin: 0.25rem 0.5rem 0 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    color: var(--colorSecondary);
+    background-color: var(--colorBgSecondary);
+}
+
+#picture {
+    width: 200px;
+    float: right;
+    margin: 0 0 0.5rem 0.5rem;
+} 
+
 #price {
     display: inline-block;
+    margin: 0.5rem 0;
     padding: 0.25rem 1rem;
     color: var(--colorSecondary);
     background-color: var(--colorPrice);
@@ -9,4 +41,26 @@
 }
 #price:after {
     content: ' DKK';
+}
+
+#category {
+    color: var(--colorSecondary);
+    background-color: var(--colorBgSecondary);
+    padding: 0.25rem 0.5rem;
+    display: inline-block;
+    font-size: 0.7rem;
+}
+
+#rate:before {
+    content: 'Rating: ';
+}
+#rate, #rateCount {
+    display: inline-block;
+    font-size: 0.7rem;
+}
+#rateCount:before {
+    content: ' (based on ';
+}
+#rateCount:after {
+    content: ' reviews)';
 }
