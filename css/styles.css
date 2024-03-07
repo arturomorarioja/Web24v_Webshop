@@ -19,9 +19,20 @@ header {
     padding: 0.5rem 2rem;
 }
 
+main {
+    margin-bottom: 2rem;
+}
+
 footer {
     padding: 0.1rem;
     text-align: center;
+}
+@media (min-width: 768px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
 }
 
 nav {
@@ -33,8 +44,14 @@ nav {
 }
 
 nav li {
-    display: inline-block;
+    display: block;
     margin-right: 1rem;
+    text-align: center;
+}
+@media (min-width: 450px) {
+    nav li {
+        display: inline-block;
+    }
 }
 
 nav li > a {
