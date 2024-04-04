@@ -11,7 +11,19 @@
 }
 
 #productList > article {
+    padding: 0.5rem;
+    border: thin solid var(--colorBgSecondary);
+    border-radius: 0.5rem;
     cursor: pointer;
+}
+@media (min-width: 650px) {
+    #productList {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #productList > article {
+        flex: 1 1 20rem;
+    }
 }
 
 dialog {
