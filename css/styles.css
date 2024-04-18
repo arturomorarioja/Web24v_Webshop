@@ -18,6 +18,9 @@ header, footer {
 
 header {
     padding: 0.5rem 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 main {
@@ -36,7 +39,7 @@ footer {
     }
 }
 
-nav {
+nav:not(#utility) {
     padding: 0.25rem 2rem;
     border-bottom: solid 0.2rem var(--colorBgSecondary);
     position: sticky;
